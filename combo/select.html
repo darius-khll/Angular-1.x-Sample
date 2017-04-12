@@ -1,0 +1,14 @@
+
+<div style="background:#e2e2e2; width: 180px;">
+
+    <input type="text" style="width:100%" ng-blur="closeCombo()" ng-value="comboValue">
+
+    <div ng-if="flag" ng-repeat="item in data" style="width: 100%" ng-mousedown="selectItem(item)">
+        <b style="color: blue;">{{item.Name}}</b>
+    </div>
+    <div ng-if="flag">
+        <button>Previous</button>
+        <button>Next</button>
+    </div>
+
+</div>
