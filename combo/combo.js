@@ -11,7 +11,7 @@ app.directive("dir", function () {
             comboValue: "<",
             total: "@"
         },
-        templateUrl: "select.html",
+        templateUrl: "combo.html",
 
         link: function (scope, element, attrs, controller) {
             scope.flag = false;
