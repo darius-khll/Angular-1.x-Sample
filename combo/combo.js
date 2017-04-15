@@ -36,7 +36,13 @@ app.directive("dir", function () {
             });
 
             scope.closeCombo = function () {
-                scope.flag = false;
+                if (!angular.element(document.activeElement).hasClass("noBlur")) {
+                    scope.flag = false;
+                }
+                else
+                {
+                    angular.element(".combo").focus();
+                }
             }
 
         }
